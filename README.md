@@ -1,6 +1,7 @@
 # Arduino-Media-Controller
-Simple little media controller for a PC, using a Leonardo Tiny Atmega32U4. \n
-The Leonardo Tiny is available from Jaycar: https://www.jaycar.com.au/duinotech-leonardo-tiny-atmega32u4-development-board/p/XC4431
+Simple little media controller for a PC, using a Leonardo Tiny Atmega32U4. 
+Which is available from Jaycar:
+https://www.jaycar.com.au/duinotech-leonardo-tiny-atmega32u4-development-board/p/XC4431
 
 --------------------------------------------------------
 
