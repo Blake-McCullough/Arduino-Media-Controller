@@ -5,6 +5,9 @@
 //Github - https://github.com/Blake-McCullough/
 //Email - privblakemccullough@protonmail.com
 //Website - https://blakemccullough.com/
+//
+//
+//
 #include <ClickEncoder.h>
 #include <TimerOne.h>
 #include <HID-Project.h>
@@ -74,7 +77,7 @@ void loop() {
       Consumer.write(MEDIA_VOLUME_UP); // Replace this line to have a different function when rotating counter-clockwise
       else
       Consumer.write(MEDIA_VOLUME_DOWN); // Replace this line to have a different function when rotating clockwise
-    last = value; // Refreshing the "last" varible for the next loop with the current value
+    last = value; // Refreshing the "last" varible for the next loop with the current value 
     Serial.print("Encoder Value: "); // Text output of the rotation value used manily for debugging (open Tools - Serial Monitor to see it)
     Serial.println(value);
   }
@@ -86,7 +89,7 @@ void loop() {
     //#define VERBOSECASE(label) case label: Serial.println(#label); break;
     switch (b) {
       case ClickEncoder::Clicked: // Button was clicked once
-        Consumer.write(MEDIA_PLAY_PAUSE);
+        Consumer.write(MEDIA_VOLUME_MUTE);
         Serial.print("Single Press\n");
         // Replace this line to have a different function when clicking button once
       break;      
