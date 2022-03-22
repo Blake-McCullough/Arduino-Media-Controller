@@ -73,7 +73,7 @@ void loop() {
 
   // This part of the code is responsible for the actions when you rotate the encoder
   if (value != last) { // New value is different than the last one, that means to encoder was rotated
-    if(last<value) // Detecting the direction of rotation
+    if(last>value) // Detecting the direction of rotation
       Consumer.write(MEDIA_VOLUME_UP); // Replace this line to have a different function when rotating counter-clockwise
       else
       Consumer.write(MEDIA_VOLUME_DOWN); // Replace this line to have a different function when rotating clockwise
